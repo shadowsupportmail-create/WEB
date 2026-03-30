@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE SHADOW CHEATS</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f0f0f;
+  --bg2:#1a1a1a;
+  --text:#e8fff9;
+  --accent:#00ffcc;
+  --card:#0b0b0bcc;
+}
+*{box-sizing:border-box}
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, var(--bg), var(--bg2));
+  color: var(--text);
+  -webkit-tap-highlight-color: transparent;
+}/* Top bar */ .topbar{ position: sticky; top:0; z-index: 50; backdrop-filter: blur(10px); background: rgba(0,0,0,0.5); display:flex; align-items:center; justify-content:space-between; padding:10px 14px; border-bottom:1px solid #00ffcc33; } .brand{font-weight:700; letter-spacing:1px; font-size:0.9rem}
+
+.toggle-btn { padding:8px 12px; background: var(--accent); color: #00110c; border: none; cursor: pointer; border-radius: 10px; font-size: 0.8rem; }
+
+/* Header */ header { text-align: center; padding: 60px 16px 40px; background: url('https://img.sanishtech.com/u/1897a7ebc8a435738bc81a942fd643ec.png') no-repeat center/cover; position: relative; } header::after{ content:''; position:absolute; inset:0; background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.9)); } header .inner{position:relative; z-index:2}
+
+header h1 { font-size: clamp(1.6rem, 6vw, 2.4rem); margin:0 0 10px; text-shadow: 0 0 12px var(--accent); }
+
+header p { font-size: clamp(0.8rem, 3.5vw, 1rem); opacity:0.9; }
+
+/* Sections / section { padding: 20px 14px 90px; / bottom space for nav */ max-width: 900px; margin: auto; }
+
+.grid{ display:grid; grid-template-columns: 1fr; gap:14px; }
+
+.card { background: var(--card); padding: 16px; border-radius: 16px; box-shadow: 0 0 10px #00ffcc22; transition: transform .2s ease, box-shadow .2s ease; }
+
+.card:active { transform: scale(0.98); }
+
+h2 { font-size: 1.05rem; margin:0 0 10px; border-bottom: 1px solid #00ffcc55; padding-bottom: 6px; }
+
+p{font-size:0.9rem; line-height:1.5}
+
+a { color: var(--accent); text-decoration: none; }
+
+/* Quick links buttons */ .btns{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px} .btn{ display:block; text-align:center; padding:10px; border-radius:12px; background:#001a14; border:1px solid #00ffcc44; } .btn:active{transform:scale(.97)}
+
+/* Bottom nav */ .bottom-nav{ position:fixed; bottom:0; left:0; right:0; background: rgba(0,0,0,0.7); backdrop-filter: blur(10px); display:flex; justify-content:space-around; padding:8px 0; border-top:1px solid #00ffcc33; } .nav-item{font-size:0.7rem; text-align:center; color:var(--accent)}
+
+footer { text-align: center; padding: 20px; font-size: 0.75rem; opacity: 0.7; }
+
+/* Light mode */ .light-mode { --bg:#ffffff; --bg2:#f2f2f2; --text:#111; --card:#ffffffcc; } .light-mode .topbar{background:#ffffffcc} .light-mode .btn{background:#f5f5f5}
+
+</style>
+</head>
+<body><div class="topbar">
+  <div class="brand">SHADOW</div>
+  <button class="toggle-btn" onclick="toggleMode()">Mode</button>
+</div><header>
+  <div class="inner">
+    <h1>THE SHADOW CHEATS OFFICIAL</h1>
+    <p>MODDER / DEVELOPER / GAMER / MEDICAL STUDENT</p>
+  </div>
+</header><section>
+  <div class="grid"><div class="card" id="about">
+  <h2>About Me</h2>
+  <p>My name is Subhan, from Afghanistan. My dream is to become a great doctor and help people. Alongside my studies, I work as a modder, developer, and gamer, constantly exploring new tech and creating tools.</p>
+</div>
+
+<div class="card">
+  <h2>Skills</h2>
+  <p>✔ APK Modding<br>✔ Android Optimization<br>✔ Basic Python<br>✔ UI Tweaks<br>✔ Gaming Tweaks</p>
+</div>
+
+<div class="card" id="contact">
+  <h2>Contact</h2>
+  <div class="btns">
+    <a class="btn" href="https://t.me/+txCC6oFj8iszZWJk" target="_blank">Telegram</a>
+    <a class="btn" href="https://youtube.com/@the_shadow_cheats?si=LZg6LUphzwNHs6D9" target="_blank">YouTube</a>
+    <a class="btn" href="https://t.me/DR_SUBHAN" target="_blank">DM</a>
+    <a class="btn" href="mailto:shadow.support.mail@gmail.com">Email</a>
+  </div>
+</div>
+
+  </div>
+</section><footer>
+  © 2026 THE SHADOW CHEATS
+</footer><div class="bottom-nav">
+  <div class="nav-item">Home</div>
+  <div class="nav-item">About</div>
+  <div class="nav-item">Contact</div>
+</div><script>
+function toggleMode() {
+  document.body.classList.toggle('light-mode');
+}
+</script></body>
+</html>
